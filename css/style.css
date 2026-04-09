@@ -76,6 +76,12 @@
 }
 
 /* primary and secondary  */
+body {
+    color: #222222 !important;
+}
+p, li, span, td, th, label, a:not(.btn):not(.nav-link):not(.navbar-brand):not(.dropdown-item) {
+    color: #222222;
+}
 .text-secondary {
     color: #0A9396 !important;
 }
@@ -879,17 +885,19 @@
 }
 .footer .footer-item a {
     line-height: 30px;
-    color: var(--bs-white);
+    color: #ffffff !important;
     transition: 0.5s;
 }
 
-.footer .footer-item p {
+.footer .footer-item p,
+.footer .footer-item h6 {
     line-height: 30px;
+    color: #ffffff !important;
 }
 
 .footer .footer-item a:hover {
     letter-spacing: 2px;
-    color: #0A9396;
+    color: #0A9396 !important;
 }
 
 /*** Footer End ***/

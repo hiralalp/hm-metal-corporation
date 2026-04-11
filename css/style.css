@@ -82,6 +82,16 @@ body {
 p, li, span, td, th, label, a:not(.btn):not(.nav-link):not(.navbar-brand):not(.dropdown-item) {
     color: #222222;
 }
+
+/* Topbar strip — always white text */
+.bg-primary a,
+.bg-primary a i {
+    color: #ffffff !important;
+    white-space: nowrap;
+}
+.bg-primary a:hover {
+    color: #0A9396 !important;
+}
 .text-secondary {
     color: #0A9396 !important;
 }
@@ -258,10 +268,10 @@ p, li, span, td, th, label, a:not(.btn):not(.nav-link):not(.navbar-brand):not(.d
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
     position: relative;
-    margin-right: 25px;
-    padding: 35px 0;
+    margin-right: 15px;
+    padding: 30px 0;
     color: var(--bs-primary) !important;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     outline: none;
     transition: .5s;
@@ -278,12 +288,16 @@ p, li, span, td, th, label, a:not(.btn):not(.nav-link):not(.navbar-brand):not(.d
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    height: 75px;
+    max-width: 240px;
+    width: auto;
+    object-fit: contain;
     transition: .5s;
 }
 
 .sticky-top .navbar-light .navbar-brand img {
-    max-height: 45px;
+    height: 60px;
+    max-width: 200px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -351,7 +365,8 @@ p, li, span, td, th, label, a:not(.btn):not(.nav-link):not(.navbar-brand):not(.d
     }
 
     .navbar-light .navbar-brand img {
-        max-height: 45px;
+        height: 55px;
+        max-width: 180px;
     }
 }
 
@@ -1264,6 +1279,13 @@ p, li, span, td, th, label, a:not(.btn):not(.nav-link):not(.navbar-brand):not(.d
 .portfolio-inner {
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-inner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
 }
 
 .portfolio-inner::before,
